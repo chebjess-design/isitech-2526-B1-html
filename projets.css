@@ -2,7 +2,7 @@ body {
   margin: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #667eea;
-  background-image: url("projets.avif");
+  background-image: url("projet.jpg");
   background-size: cover;
 }
 nav ul {
@@ -18,4 +18,135 @@ nav a {
   padding: 10px 26px;
   border-radius: 30px;
   background: #667eea;
+}
+.page-header {
+  padding: 40px 24px 10px;
+  text-align: center;
+}
+.page-header h1 {
+  margin: 0 0 8px;
+  font-size: 28px;
+  letter-spacing: 0.2px;
+}
+.page-header p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+/* ===== Table Card ===== */
+.table-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: 0 10px 24px #f0f0f0;
+  overflow: hidden;
+}
+
+.table-header {
+  padding: 20px 24px 0;
+}
+.table-header h2 {
+  margin: 0 0 6px;
+  font-size: 22px;
+}
+.table-header p {
+  margin: 0 0 12px;
+  color: var(--muted);
+}
+
+/* ===== Table ===== */
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.projects-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 820px; /* permet le scroll sur petits écrans */
+  color: #f0f0f0;
+}
+
+.projects-table thead th {
+  text-align: left;
+  font-weight: 600;
+  color: var(--muted);
+  background: #f0f0f0;
+  color: #555;
+  border-bottom: 1px solid var(--border);
+  padding: 14px 16px;
+  font-size: 13px;
+}
+
+.projects-table tbody td {
+  border-bottom: 1px solid var(--border);
+  padding: 16px;
+  vertical-align: top;
+  font-size: 14px;
+  color: #f0f0f0; 
+}
+/* ===== Tags ===== */
+.tags {
+  margin-top: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.tag {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  border: 1px solid var(--border);
+  background: #fafbff;
+  color: #555;
+}
+
+/* Thématiques (couleurs subtiles) */
+.tag.cloud      { background: #eef4ff; color: #2442a3; border-color: #dbe6ff; }
+.tag.devops     { background: #eefcf5; color: #166b3b; border-color: #d9f3e6; }
+.tag.security   { background: #fff4f0; color: #8a2b1f; border-color: #ffe2d8; }
+.tag.network    { background: #f0f7ff; color: #135e96; border-color: #dbeafd; }
+.tag.mobile     { background: #f7f0ff; color: #5a2ea6; border-color: #eadcff; }
+.tag.api        { background: #f0fffb; color: #0b6b57; border-color: #dcfff6; }
+.tag.data       { background: #fffbe6; color: #7a5a00; border-color: #fbf2c0; }
+.tag.analytics  { background: #fff7ef; color: #8a4c10; border-color: #ffe6cc; }
+.tag.qa         { background: #f2f7ff; color: #1f4ea8; border-color: #e1ecff; }
+.tag.governance { background: #f9f9ff; color: #3f3b8b; border-color: #e8e7ff; }
+.tag.crm        { background: #effaff; color: #0d5c82; border-color: #d8f1ff; }
+.tag.integration{ background: #f7fff2; color: #346312; border-color: #e8ffd6; }
+.tag.web        { background: #f3f8ff; color: #2a5ea3; border-color: #e2edff; }
+.tag.perf       { background: #fff4fb; color: #7a245e; border-color: #ffd8f4; }
+.tag.ops        { background: #f2fffb; color: #146a5e; border-color: #dcfff6; }
+.tag.itsm       { background: #f6faff; color: #274b7a; border-color: #e5f0ff; }
+
+/* ===== Legend & Footer ===== */
+.legend {
+  padding: 12px 16px 20px;
+  color: var(--muted);
+  font-size: 13px;
+  border-top: 1px dashed var(--border);
+}
+
+.page-footer {
+  text-align: center;
+  color: var(--muted);
+  font-size: 13px;
+  padding: 18px 0 30px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 720px) {
+  .page-header { padding: 28px 16px 8px; }
+  .container { padding: 16px; }
+  .table-header h2 { font-size: 20px; }
+  .projects-table { min-width: 680px; }
 }

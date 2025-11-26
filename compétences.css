@@ -1,8 +1,8 @@
 body {
   margin: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: #667eea;
-  background-image: url("compétences.jpg");
+  color: #f9faf8;
+  background-image: url("gris.jpeg");
   background-size: cover;
 }
 nav ul {
@@ -26,5 +26,5 @@ nav a {
 }
 .compétences h4 { 
   margin: 15px 0 5px;
-  color: #333;
+  color: #91e228;
 }
