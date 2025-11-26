@@ -7,7 +7,7 @@ body {
 }
 nav ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   gap: 50px;
   margin-top: 20px;
 }
@@ -151,4 +151,30 @@ nav a {
   .container { padding: 16px; } /* Réduit le padding */
   .table-header h2 { font-size: 20px; } /* Réduit la taille du titre */
   .projects-table { min-width: 680px; } /* Largeur minimale réduite */
+}
+/* Styles par défaut (mode clair) */
+body {
+  background: #ffffff;
+  color: #000000;
+  font-family: Arial, sans-serif;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Mode sombre */
+body.dark {
+  background: #121212;
+  color: #f0f0f0;
+}
+
+/* Bouton */
+#toggle-theme {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 8px 12px;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  background: #0077b5;
+  color: white;
 }

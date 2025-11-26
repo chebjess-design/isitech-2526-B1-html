@@ -7,7 +7,7 @@ body {
 }
 nav ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   gap: 50px;
   margin-top: 20px;
 }
@@ -43,16 +43,25 @@ nav a {
   color: #667eea;
   font-weight: normal;
 }
-
-.profil p {
-  max-width: 90%;
-  margin: 0 auto;
-  text-align: center;
-  color: #555;
-  line-height: 1.6;
-  font-size: 1em;
+.presentation {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  line-height: 1.8;
 }
 
+.presentation h2 {
+  text-align: center;
+  color: #0077b5;
+  margin-bottom: 20px;
+}
+
+.presentation p strong {
+  color: #0077b5;
+}
 .contacts {
   display: flex;              
   justify-content: center;     
@@ -89,4 +98,30 @@ footer {
   text-align: center;
   margin-top: 100px;
   justify-content: center;
+}
+/* Styles par défaut (mode clair) */
+body {
+  background: #ffffff;
+  color: #000000;
+  font-family: Arial, sans-serif;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Mode sombre */
+body.dark {
+  background: #121212;
+  color: #f0f0f0;
+}
+
+/* Bouton */
+#toggle-theme {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 8px 12px;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  background: #0077b5;
+  color: white;
 }

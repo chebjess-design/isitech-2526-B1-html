@@ -2,12 +2,12 @@ body {
   margin: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #f9faf8;
-  background-image: url("gris.jpeg");
+  background-image: url("projet.jpg");
   background-size: cover;
 }
 nav ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   gap: 100px;
   margin-top: 20px;
 }
@@ -26,5 +26,31 @@ nav a {
 }
 .compétences h4 { 
   margin: 15px 0 5px;
-  color: #91e228;
+  color: #667eea;
+}
+/* Styles par défaut (mode clair) */
+body {
+  background: #ffffff;
+  color: #000000;
+  font-family: Arial, sans-serif;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Mode sombre */
+body.dark {
+  background: #121212;
+  color: #f0f0f0;
+}
+
+/* Bouton */
+#toggle-theme {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 8px 12px;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  background: #0077b5;
+  color: white;
 }
