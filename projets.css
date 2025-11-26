@@ -34,83 +34,85 @@ nav a {
   font-size: 15px;
 }
 
+/* ===== Conteneur principal ===== */
 .container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 24px;
+  max-width: 1100px; /* largeur maximal*/
+  margin: 0 auto; /* centre horizontalement */
+  padding: 24px; /* espacement interne */
 }
 
-/* ===== Table Card ===== */
+/* ===== Carte contenant le tableau ===== */
 .table-card {
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  box-shadow: 0 10px 24px #f0f0f0;
-  overflow: hidden;
+  background: var(--card); /* Fond défini par variable */
+  border: 1px solid var(--border); /* Bordure grise */
+  border-radius: var(--radius); /* Coins arrondis */
+  box-shadow: 0 10px 24px #f0f0f0; /* Ombre portée */
+  overflow: hidden; /* Cache ce qui dépasse */
 }
 
+/* ===== En-tête du tableau ===== */
 .table-header {
-  padding: 20px 24px 0;
+  padding: 20px 24px 0; /* Espacement interne */
 }
 .table-header h2 {
-  margin: 0 0 6px;
-  font-size: 22px;
+  margin: 0 0 6px; /* Marge en bas */
+  font-size: 22px; /* Taille du sous-titre */
 }
 .table-header p {
-  margin: 0 0 12px;
-  color: var(--muted);
+  margin: 0 0 12px; /* Marge en bas */
+  color: var(--muted); /* Couleur grise */
 }
 
-/* ===== Table ===== */
+/* ===== Tableau ===== */
 .table-wrapper {
-  width: 100%;
-  overflow-x: auto;
+  width: 100%; /* Prend toute la largeur */
+  overflow-x: auto; /* Scroll horizontal si trop large */
 }
 
 .projects-table {
-  width: 100%;
-  border-collapse: collapse;
-  min-width: 820px; /* permet le scroll sur petits écrans */
-  color: #f0f0f0;
+  width: 100%; /* Largeur totale */
+  border-collapse: collapse; /* Supprime les espaces entre cellules */
+  min-width: 820px; /* Largeur minimale */
+  color: #f0f0f0; /* Texte gris clair */
 }
 
 .projects-table thead th {
-  text-align: left;
-  font-weight: 600;
-  color: var(--muted);
-  background: #f0f0f0;
-  color: #555;
-  border-bottom: 1px solid var(--border);
-  padding: 14px 16px;
-  font-size: 13px;
+  text-align: left; /* Alignement à gauche */
+  font-weight: 600; /* Texte semi-gras */
+  background: #f0f0f0; /* Fond gris clair */
+  color: #555; /* Texte gris foncé */
+  border-bottom: 1px solid var(--border); /* Ligne de séparation */
+  padding: 14px 16px; /* Espacement interne */
+  font-size: 13px; /* Taille du texte */
 }
 
 .projects-table tbody td {
-  border-bottom: 1px solid var(--border);
-  padding: 16px;
-  vertical-align: top;
-  font-size: 14px;
-  color: #f0f0f0; 
-}
-/* ===== Tags ===== */
-.tags {
-  margin-top: 8px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-.tag {
-  display: inline-block;
-  padding: 4px 10px;
-  border-radius: 999px;
-  font-size: 12px;
-  font-weight: 600;
-  border: 1px solid var(--border);
-  background: #fafbff;
-  color: #555;
+  border-bottom: 1px solid var(--border); /* Ligne de séparation */
+  padding: 16px; /* Espacement interne */
+  vertical-align: top; /* Texte aligné en haut */
+  font-size: 14px; /* Taille du texte */
+  color: #f0f0f0; /* Texte gris clair */
 }
 
-/* Thématiques (couleurs subtiles) */
+/* ===== Tags ===== */
+.tags {
+  margin-top: 8px; /* Décalage vers le bas */
+  display: flex; /* Affichage en ligne */
+  flex-wrap: wrap; /* Retour à la ligne si trop long */
+  gap: 8px; /* Espacement entre tags */
+}
+.tag {
+  display: inline-block; /* Affichage en bloc inline */
+  padding: 4px 10px; /* Espacement interne */
+  border-radius: 999px; /* Forme arrondie (pilule) */
+  font-size: 12px; /* Taille du texte */
+  font-weight: 600; /* Texte semi-gras */
+  border: 1px solid var(--border); /* Bordure grise */
+  background: #fafbff; /* Fond gris très clair */
+  color: #555; /* Texte gris foncé */
+}
+
+/* ===== Couleurs spécifiques pour chaque tag ===== */
 .tag.cloud      { background: #eef4ff; color: #2442a3; border-color: #dbe6ff; }
 .tag.devops     { background: #eefcf5; color: #166b3b; border-color: #d9f3e6; }
 .tag.security   { background: #fff4f0; color: #8a2b1f; border-color: #ffe2d8; }
@@ -128,25 +130,25 @@ nav a {
 .tag.ops        { background: #f2fffb; color: #146a5e; border-color: #dcfff6; }
 .tag.itsm       { background: #f6faff; color: #274b7a; border-color: #e5f0ff; }
 
-/* ===== Legend & Footer ===== */
+/* ===== Légende et pied de page ===== */
 .legend {
-  padding: 12px 16px 20px;
-  color: var(--muted);
-  font-size: 13px;
-  border-top: 1px dashed var(--border);
+  padding: 12px 16px 20px; /* Espacement interne */
+  color: var(--muted); /* Couleur grise */
+  font-size: 13px; /* Taille du texte */
+  border-top: 1px dashed var(--border); /* Ligne en pointillés */
 }
 
 .page-footer {
-  text-align: center;
-  color: var(--muted);
-  font-size: 13px;
-  padding: 18px 0 30px;
+  text-align: center; /* Centrage du texte */
+  color: var(--muted); /* Couleur grise */
+  font-size: 13px; /* Taille du texte */
+  padding: 18px 0 30px; /* Espacement interne */
 }
 
-/* ===== Responsive ===== */
+/* ===== Responsive (petits écrans) ===== */
 @media (max-width: 720px) {
-  .page-header { padding: 28px 16px 8px; }
-  .container { padding: 16px; }
-  .table-header h2 { font-size: 20px; }
-  .projects-table { min-width: 680px; }
+  .page-header { padding: 28px 16px 8px; } /* Réduit le padding */
+  .container { padding: 16px; } /* Réduit le padding */
+  .table-header h2 { font-size: 20px; } /* Réduit la taille du titre */
+  .projects-table { min-width: 680px; } /* Largeur minimale réduite */
 }
