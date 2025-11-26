@@ -8,7 +8,7 @@ body {
 nav ul {
   display: flex;
   justify-content: flex-start;
-  gap: 50px;
+  gap: 100px;
   margin-top: 20px;
 }
 nav a {
