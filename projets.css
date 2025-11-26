@@ -2,13 +2,13 @@ body {
   margin: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #667eea;
-  background-image: url("compétences.jpg");
+  background-image: url("projets.avif");
   background-size: cover;
 }
 nav ul {
   display: flex;
   justify-content: space-around;
-  gap: 100px;
+  gap: 50px;
   margin-top: 20px;
 }
 nav a {
@@ -18,13 +18,4 @@ nav a {
   padding: 10px 26px;
   border-radius: 30px;
   background: #667eea;
-}
-.compétences { 
-  text-align: left;
-  margin-top: 40px;
-  padding: 0 20px;
-}
-.compétences h4 { 
-  margin: 15px 0 5px;
-  color: #333;
 }
