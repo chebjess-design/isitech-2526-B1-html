@@ -2,7 +2,6 @@ body {
   margin: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #667eea;
-  background-image: url("projet.jpg");
   background-size: cover;
 }
 nav ul {
@@ -10,6 +9,7 @@ nav ul {
   justify-content: flex-start;
   gap: 100px;
   margin-top: 20px;
+  list-style: none;
 }
 nav a {
   text-decoration: none;
