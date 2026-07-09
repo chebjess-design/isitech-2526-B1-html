@@ -1,0 +1,200 @@
+/* RESET */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* PAGE */
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:#f4f7fc;
+    color:#333;
+    line-height:1.6;
+}
+
+/* HEADER */
+
+h1{
+    background:linear-gradient(135deg,#1e3c72,#2a5298);
+    color:white;
+    text-align:center;
+    padding:25px;
+    font-size:2rem;
+    letter-spacing:1px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* NAVIGATION */
+
+nav{
+    background:white;
+    text-align:center;
+    padding:15px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+nav a{
+    text-decoration:none;
+    color:#2a5298;
+    margin:0 15px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#1e3c72;
+}
+
+/* CONTENU */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:30px auto;
+}
+
+/* TITRES */
+
+h2{
+    color:#1e3c72;
+    margin-bottom:20px;
+}
+
+/* CARTES */
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    margin-bottom:25px;
+}
+
+/* TABLEAUX */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}
+
+th{
+    background:#1e3c72;
+    color:white;
+    padding:15px;
+}
+
+td{
+    padding:15px;
+    border-bottom:1px solid #eee;
+}
+
+tr:hover{
+    background:#f7f9ff;
+}
+
+/* FORMULAIRES */
+
+form{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}
+
+input,
+textarea,
+select{
+    width:100%;
+    padding:12px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    margin-top:5px;
+    margin-bottom:15px;
+    font-size:15px;
+}
+
+input:focus,
+textarea:focus{
+    outline:none;
+    border-color:#2a5298;
+}
+
+/* BOUTONS */
+
+button,
+.btn{
+    background:linear-gradient(135deg,#1e3c72,#2a5298);
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:10px;
+    cursor:pointer;
+    text-decoration:none;
+    display:inline-block;
+    transition:0.3s;
+}
+
+button:hover,
+.btn:hover{
+    transform:translateY(-2px);
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* BADGES */
+
+.disponible{
+    background:#2ecc71;
+    color:white;
+    padding:6px 10px;
+    border-radius:20px;
+    font-size:12px;
+}
+
+.indisponible{
+    background:#e74c3c;
+    color:white;
+    padding:6px 10px;
+    border-radius:20px;
+    font-size:12px;
+}
+
+/* FOOTER */
+
+footer{
+    margin-top:40px;
+    text-align:center;
+    background:#1e3c72;
+    color:white;
+    padding:20px;
+}
+
+/* Couvertures des livres */
+
+.couverture{
+    width:120px;
+    height:120px;
+    object-fit:cover;
+    border-radius:3px;
+}
+
+a.loupe,
+a.loupe:link,
+a.loupe:visited,
+a.loupe:hover,
+a.loupe:active,
+a.loupe:focus{
+    text-decoration: none;
+    border-bottom: none;
+    outline: none;
+    box-shadow: none;
+    color: black;
+    display: inline-block;
+    font-size: 20px;
+}
